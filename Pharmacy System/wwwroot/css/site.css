@@ -1,0 +1,2588 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* min-height: 100vh;*/ /* Ensures body takes full viewport height */
+    /*display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;*/
+}
+
+html, body {
+    /*  height: 100%;
+    font-size: 14px;*/
+}
+.dashboardSection {
+    min-height:400px;
+}
+html {
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    min-height: 100%;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0; /* Prevents footer from shrinking */
+    background: rgb(26, 144, 143);
+    color: #000;
+    padding-top: 50px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+#showMenuLink {
+    display: none;
+}
+
+.listDetailsbtn {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.bottom_bar:after {
+    clear: both;
+}
+
+
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /*margin-bottom: 60px*/;
+    font-family: Verdana;
+}
+
+.sitepagetopblueLine {
+    background-color: rgb(0, 175, 239);
+    height: 30px;
+}
+
+.sitetopbargreen {
+    color: rgb(0, 165, 80);
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.loginToplogo {
+    max-height: 250px;
+    /*margin-left:100px;*/
+}
+
+.toplogo {
+    max-height: 50px;
+    /*margin-left:100px;*/
+}
+
+.toplogoandgreentext {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.showinsameline {
+    display: flex;
+}
+
+.listpatientpaddingtop {
+    margin-top: 50px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.tablerowColor(even) {
+    background-color: darkgray;
+}
+
+.tablerowColor(odd) {
+    background-color: lightgray;
+}
+
+.mr-1 {
+    margin-right: 10px !important;
+}
+
+.horizontalscroll {
+    overflow-x: scroll;
+}
+
+select {
+    -webkit-appearance: listbox !important;
+}
+
+.marginlr-10 {
+    margin: 0px 10px 0px 20px;
+}
+
+.lblerr {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.alignheaderCenter {
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    text-align: center;
+}
+
+#patientDetails .oddrow, #detailsLoyaltyProgramme .oddrow {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+#patientDetails .evenrow, #detailsLoyaltyProgramme .evenrow {
+    padding: 10px;
+}
+
+.patientDetailsEdit {
+    margin-top: 20px;
+    width: 80px !important;
+}
+
+.tableTopBackColor {
+    background-color: #ffc107 !important;
+}
+
+.tableRowAlternativeColor {
+    background-color: #F3F2F2 !important;
+}
+
+.tblList tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.tblList tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.footerbg {
+    margin-top: 5px;
+    background: rgb(26, 144, 143);
+    color: var(--chakra-colors-white);
+}
+
+.patientsSearch {
+    margin-left: 15px;
+}
+
+.patientdetails {
+    margin-left: 5px;
+}
+
+.patientdetailsback {
+    margin-left: 7px;
+}
+
+.loyaltyEditback {
+    margin-left: 10px;
+}
+
+.btn {
+    /*width:90px!important;*/
+}
+
+.btnbacktoList {
+    width: 120px !important;
+}
+
+.btnchangepassword {
+    width: 180px !important;
+}
+#dvSideBarContainer {
+    /*height: 500px;*/
+    width: 100px;
+   /* background-color: lightgray;*/
+}
+
+.pagetopbanner {
+    background-image: url('/images/pageTopBannerr.png');
+    background-size: cover;
+    background-position: center center;
+    height: 120px;
+    display: flex;
+    margin-top: 10px;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+/*#tblListPatients {
+    font-size: 14px; 
+    vertical-align:middle;
+}*/
+.tblListPatientsRows, .tblListRowsStyles, .tblModelListRows {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+    .tblListPatientsRows:hover {
+        background-color: #707070 !important;
+        color: white;
+    }
+
+.patientListActionBtn {
+    font-size: 14px;
+    color: white;
+}
+
+    .patientListActionBtn:hover {
+        color: #ffc107;
+        /* background-color: #555;*/
+    }
+
+.ListActionBtn {
+    font-size: 14px;
+    color: white;
+}
+
+    .ListActionBtn:hover {
+        color: #ffc107;
+    }
+
+.tblHeadingCenter, .tblColumnCenter {
+    text-align: center;
+}
+
+.listPatientLoyaltyDisplay {
+    background-color: #fad1d0 !important;
+}
+
+.footercopywrite {
+    text-align: center !important;
+    flex-direction: column;
+    display: flex;
+    font-size: 12px;
+}
+
+.welcomemsg i {
+    color: #ffc107;
+    margin-top: 11px;
+}
+
+.welcomemsg {
+    color: rgb(0, 165, 80);
+    text-transform: capitalize;
+}
+
+.logoutText {
+    font-size: 14px;
+    border: solid;
+    border-color: rgb(0, 165, 80); /*#ffc107*/
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    height: 30px;
+    background-color: rgb(0, 165, 80); /* #ffc107;*/
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+    .logoutText a {
+        color: white;
+        text-decoration: none;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+        .logoutText a:hover {
+            color: #ffc107;
+        }
+
+.siteButtons, .siteButtonsclear {
+    width: 90px;
+    color: white;
+}
+
+    .siteButtons:hover {
+        color: #ffc107;
+    }
+
+    .siteButtonsclear:hover {
+        color: #198754;
+    }
+
+#fldataloader {
+    /*background: url('../images/loader.gif') no-repeat;*/
+    background-size: 55%;
+    height: 100vh;
+    width: 120px;
+    position: fixed;
+    z-index: 100;
+}
+
+.btn-close {
+    color: red;
+}
+
+.modalShow {
+    display: flex !important;
+}
+
+.modalHeaderBg {
+    color: white;
+    background-color: #04AA6D;
+}
+
+.modal-dialog {
+    width: 750px;
+}
+
+.modal-content {
+    background-color: #c8c8c8;
+}
+
+#patientModal .modal-dialog {
+    max-width: 100%; /* Adjust this as needed */
+    width: auto;
+}
+
+.modal {
+    margin-top: 100px;
+}
+.dvListMedicines, .dlDeleteMedicines {
+    min-height: 380px;
+}
+.datepicker-days thead tr th {
+    background-color: #ffc107;
+}
+.day {
+padding:10px;
+}
+    .day:hover {
+        background-color: #ffc107!important;
+    }
+.datepicker-days tr td.active {
+    background-color: red !important;
+}
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: 520px;
+    overflow: auto;
+}
+
+    /* Sidebar links */
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+        /* Active/current link */
+        .sidebar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        /* Links on mouse-over */
+        .sidebar a:hover:not(.active) {
+            background-color: #707070;
+            color: white;
+        }
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    /*height: 1000px;*/
+}
+
+.loginPageBgColor {
+    background-color: #f1f2f1;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        /* Change the color of links on hover */
+
+        .topnav a:hover:not(.active) {
+            background-color: #707070;
+            color: white;
+        }
+
+        /* Add an active class to highlight the current page */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+    /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+        display: none;
+    }
+
+
+
+@media screen and (min-width: 1800px) {
+    /*body {
+        background-color: orangered
+    }*/
+
+    .userloginsection {
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 1369px) {
+    /* body {
+        background-color: yellow
+    }*/
+    .userloginsection {
+        min-height: 570px;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .inactivepatients {
+        min-height: 560px;
+    }
+
+    .loyaltysection {
+        min-height: 560px;
+    }
+
+    .changepwdsection {
+        min-height: 560px;
+    }
+
+    .alignheaderCenter {
+        padding-left: 150px;
+    }
+
+    /*.alignLoginheaderCenter {
+        padding-left: 210px;
+    }*/
+    .patientsection {
+        min-height: 1400px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1369px) {
+    /* body {
+        background-color: yellow
+    }*/
+    .topnav {
+        display: none;
+    }
+
+    .userloginsection {
+        min-height: 570px;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .inactivepatients {
+        min-height: 560px;
+    }
+
+    .loyaltysection {
+        min-height: 560px;
+    }
+
+    .changepwdsection {
+        min-height: 560px;
+    }
+
+    .alignheaderCenter {
+        padding-left: 150px;
+    }
+
+    /*.alignLoginheaderCenter {
+        padding-left: 210px;
+    }*/
+    .patientsection {
+        min-height: 1400px;
+    }
+
+    .dvListMedicines {
+        width: 980px;
+    }
+
+    .dvAddMedicine {
+        width: 980px;
+    }
+
+    #hrSearchPatients {
+        width: 435px;
+    }
+
+    #hrListPatients {
+        width: 980px;
+    }
+
+    #hrCreatePatients {
+        width: 980px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 40%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 30%
+    }
+
+    #dvTopHeading {
+        margin-left: -150px;
+    }
+
+    #dvTopHeading {
+        padding-left: 0px;
+    }
+
+    .inactivepatients {
+        min-height: 785px;
+    }
+
+    .dvListInactivePatients {
+        width: 850px;
+    }
+
+    .loyaltysection {
+        min-height: 785px;
+    }
+
+    .dvloyalty {
+        width: 950px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 330px;
+    }
+
+    .loyaltysection {
+        min-height: 675px;
+    }
+
+    .changepwdsection {
+        min-height: 785px;
+    }
+}
+
+
+@media screen and (min-width: 1185px) and (max-width: 1280px) {
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 500px;
+    }
+
+    #hrSearchPatients {
+        width: 430px;
+    }
+
+    #hrListPatients {
+        width: 945px;
+    }
+
+    #hrCreatePatients {
+        width: 945px;
+    }
+
+    .dvListMedicines {
+        width: 945px;
+    }
+
+    .dvAddMedicine {
+        width: 945px;
+    }
+
+    #dvTopHeading {
+        margin-left: -100px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 45%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 25%
+    }
+
+    .dvloggedSection {
+        width: 350px !important;
+    }
+
+    .logoutText {
+        margin-left: 15px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1185px) {
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .userloginsection {
+        min-height: 500px;
+    }
+
+    #dvSearchSection {
+        width: 450px;
+    }
+
+    #hrSearchPatients {
+        width: 450px;
+    }
+
+    #hrListPatients {
+        width: 795px;
+    }
+
+    #hrCreatePatients {
+        width: 795px;
+    }
+
+    .dvListMedicines {
+        width: 795px;
+    }
+
+    .dvAddMedicine {
+        width: 795px;
+    }
+
+    #dvTopHeading {
+        margin-left: -100px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 45%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 25%
+    }
+
+    .dvloggedSection {
+        width: 350px !important;
+    }
+
+    .logoutText {
+        margin-left: 15px;
+    }
+
+    .inactivepatients {
+        min-height: 582px;
+    }
+
+    .dvListInactivePatients {
+        width: 805px;
+    }
+
+    .loyaltysection {
+        min-height: 582px;
+    }
+
+    .dvloyalty {
+        width: 800px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 330px;
+    }
+
+    .changepwdsection {
+        min-height: 582px;
+    }
+}
+
+@media screen and (min-width: 935px) and (max-width: 1025px) and (orientation: landscape) {
+    /* body {
+            background-color: gray;
+        }*/
+    .topnav {
+        display: none;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 917px;
+    }
+
+    #dvSearchSection {
+        width: 550px;
+    }
+
+    #dvTopHeading {
+        margin-left: -150px;
+    }
+
+    #hrSearchPatients {
+        width: 550px;
+    }
+
+    #hrListPatients {
+        width: 720px !important;
+    }
+
+    #hrCreatePatients {
+        width: 720px !important;
+    }
+
+    .dvListMedicines {
+        width: 720px;
+    }
+
+    .dvAddMedicine {
+        width: 720px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 50%
+    }
+
+    .dvheadSection .dvloggedSection {
+        width: 40%
+    }
+
+    .logoutText {
+        margin-left: 10px;
+    }
+
+    .inactivepatients {
+        min-height: 530px;
+    }
+
+    .dvListInactivePatients {
+        width: 730px;
+    }
+
+    .loyaltysection {
+        min-height: 530px;
+    }
+
+    .dvloyalty {
+        width: 730px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 315px;
+    }
+
+    .changepwdsection {
+        min-height: 530px;
+    }
+}
+
+@media screen and (min-width: 917px) and (max-width: 935px) and (orientation: landscape) {
+    /*   body {
+            background-color: gray;
+        }
+*/
+
+    .topnav {
+        display: none;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 917px;
+    }
+
+    #dvSearchSection {
+        width: 450px;
+    }
+
+    #dvTopHeading {
+        margin-left: -150px;
+    }
+
+    #hrSearchPatients {
+        width: 450px;
+    }
+
+    #hrListPatients {
+        width: 560px !important;
+    }
+
+    #hrCreatePatients {
+        width: 560px !important;
+    }
+
+    .dvListMedicines {
+        width: 560px;
+    }
+
+    .dvAddMedicine {
+        width: 560px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 60%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 20%
+    }
+
+    .dvheadSection {
+        margin-left: -80px !important;
+    }
+
+    .logoutText {
+        margin-left: 10px;
+    }
+
+    .dvloggedSection {
+        width: 300px !important;
+    }
+
+    #dvWelcomeLarge {
+        margin-left: -50px;
+    }
+
+    .dvloyalty {
+        width: 570px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 305px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 915px) and (max-width: 917px) and (orientation: landscape) {
+    /*  body {
+        background-color: green;
+    }
+*/
+    .topnav {
+        display: none;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 917px;
+    }
+
+    #dvSearchSection {
+        width: 450px;
+    }
+
+    #dvTopHeading {
+        margin-left: -150px;
+    }
+
+    #hrSearchPatients {
+        width: 450px;
+    }
+
+    #hrListPatients {
+        width: 550px !important;
+    }
+
+    #hrCreatePatients {
+        width: 550px !important;
+    }
+
+    .dvListMedicines {
+        width: 550px;
+    }
+
+    .dvAddMedicine {
+        width: 550px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 50%
+    }
+
+    /*.dvheadSection .dvloggedSection {
+        width: 25%
+    }*/
+
+    .logoutText {
+        margin-left: 10px;
+    }
+
+    .dvheadSection {
+        margin-left: -100px;
+    }
+
+    .dvloggedSection {
+        width: 350px !important;
+    }
+
+    #dvWelcomeLarge {
+        /*margin-left:60px;*/
+    }
+
+    .dvListInactivePatients {
+        width: 550px;
+    }
+
+    .dvloyalty {
+        width: 575px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 300px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+}
+
+
+@media screen and (min-width: 915px) and (max-width: 1025px)and (orientation: portrait) {
+    /*  body {
+            background-color: gray;
+        }
+*/
+    .topnav {
+        display: none;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 917px;
+    }
+
+    #dvSearchSection {
+        width: 550px;
+    }
+
+    #dvTopHeading {
+        margin-left: -150px;
+    }
+
+    #hrSearchPatients {
+        width: 550px;
+    }
+
+    #hrListPatients {
+        width: 720px !important;
+    }
+
+    #hrCreatePatients {
+        width: 720px !important;
+    }
+
+    .dvListMedicines {
+        width: 720px;
+    }
+
+    .dvAddMedicine {
+        width: 720px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 50%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 25%
+    }
+
+    .dvheadSection .dvloggedSection {
+        width: 40%
+    }
+
+    .inactivepatients {
+        min-height: 1125px;
+    }
+
+    .dvListInactivePatients {
+        width: 685px;
+    }
+
+    .loyaltysection {
+        min-height: 1127px;
+    }
+
+    .dvloyalty {
+        width: 720px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 310px;
+    }
+
+    .changepwdsection {
+        min-height: 1128px;
+    }
+}
+
+@media screen and (min-width: 883px) and (max-width: 915px) {
+    /* body {
+            background-color: blue;
+        }*/
+    .sidebar {
+        /*height:150px;*/
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 919px;
+    }
+
+    .inactivepatients {
+        min-height: 400px;
+    }
+
+    #dvSearchSection {
+        width: 460px;
+    }
+
+    .dvListMedicines {
+        width: 525px;
+    }
+
+    .dvAddMedicine {
+        width: 525px;
+    }
+
+    #dvTopHeading {
+        margin-left: -100px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 55%
+    }
+
+    .dvheadSection .dvloggedSection {
+        width: 43%
+    }
+
+    .logoutText {
+        margin-left: 5px;
+    }
+
+    #hrListPatients {
+        width: 520px;
+    }
+
+    #hrCreatePatients {
+        width: 520px;
+    }
+
+    #hrListInactivePatients, .dvListInactivePatients {
+        width: 545px;
+    }
+
+    .inactivepatients {
+        min-height: 1130px;
+    }
+
+    .dvloyalty {
+        width: 560px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 300px;
+    }
+
+    .loyaltysection {
+        min-height: 1129px;
+    }
+
+    .loyaltysection {
+        min-height: 478px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+
+    .changepwdsection {
+        min-height: 1130px;
+    }
+}
+
+@media screen and (min-width: 855px) and (max-width: 883px) {
+    /*body {
+            background-color: blue;
+        }*/
+    .topnav {
+        display: none;
+    }
+
+    .sidebar {
+        height: 190px;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 919px;
+    }
+
+    #dvSearchSection {
+        width: 460px;
+    }
+
+    .dvListMedicines {
+        width: 525px;
+    }
+
+    .dvAddMedicine {
+        width: 525px;
+    }
+
+    #dvTopHeading {
+        margin-left: -100px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 55%
+    }
+
+    .dvheadSection .dvloggedSection {
+        width: 43%
+    }
+
+    .logoutText {
+        margin-left: 5px;
+    }
+
+    .dvloyalty {
+        width: 540px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 300px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 845px) and (max-width: 855px) {
+    /* body {
+            background-color: aquamarine
+        }*/
+    .topnav {
+        display: none;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 830px;
+    }
+
+    #dvSearchSection {
+        width: 460px;
+    }
+
+    .dvListMedicines {
+        width: 500px;
+    }
+
+    #hrSearchPatients {
+        width: 460px;
+    }
+
+    .dvAddMedicine {
+        width: 500px;
+    }
+
+    #hrListPatients, #hrCreatePatients {
+        width: 500px;
+    }
+
+    #hrListPatients {
+        width: 500px !important;
+    }
+
+    #dvTopHeading {
+        margin-left: -100px;
+    }
+
+    .dvheadSection #dvTopHeading {
+        width: 60%;
+    }
+
+    .dvheadSection .dvloggedSection {
+        width: 37%;
+    }
+
+    .inactivepatients {
+        min-height: 1040px;
+    }
+
+    .dvListInactivePatients {
+        width: 510px;
+    }
+
+    .loyaltysection {
+        min-height: 1040px;
+    }
+
+    .dvloyalty {
+        width: 520px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 300px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+
+    .changepwdsection {
+        min-height: 1040px;
+    }
+}
+
+@media screen and (min-width: 825px) and (max-width: 845px) {
+
+    /*body{
+        background-color:aquamarine
+    }*/
+    .topnav {
+        display: none;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 830px;
+    }
+
+    #dvSearchSection {
+        width: 460px;
+    }
+
+    .dvListMedicines {
+        width: 500px;
+    }
+
+    #hrSearchPatients {
+        width: 460px;
+    }
+
+    .dvAddMedicine {
+        width: 500px;
+    }
+
+    #hrListPatients, #hrCreatePatients {
+        width: 500px;
+    }
+
+    #hrListPatients {
+        width: 500px !important;
+    }
+
+    #dvTopHeading {
+        margin-left: -100px;
+    }
+
+    .dvheadSection #dvTopHeading {
+        width: 60%;
+    }
+
+    .dvheadSection .dvloggedSection {
+        width: 37%;
+    }
+
+    .dvheadSection {
+        margin-left: -30px;
+    }
+
+    #dvWelcomeLarge {
+        margin-left: -40px;
+    }
+
+    .dvloyalty {
+        width: 540px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 300px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 815px) and (max-width: 825px) {
+    /*body {
+            background-color: blue;
+        }*/
+    .topnav {
+        display: none;
+    }
+
+    .loginPageBgColor .col-sm-3 {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .loginPageBgColor .col-sm-6 {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 731px;
+    }
+
+    #dvTopHeading img {
+        margin-left: -160px;
+    }
+
+    #dvTopHeading {
+        width: 35%;
+    }
+
+    .dvloggedSection {
+        /*width: 35%;*/
+        width: 270px;
+    }
+
+    #dvSearchSection {
+        width: 460px;
+    }
+
+    .dvListMedicines {
+        width: 500px;
+    }
+
+    .dvAddMedicine {
+        width: 500px;
+    }
+
+    #hrListPatients {
+        width: 500px;
+    }
+
+    #hrCreatePatients {
+        width: 500px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 40%
+    }
+
+    /*.dvheadSection .col-sm-3 {
+            width: 30%
+        }*/
+    #dvTopHeading {
+        font-size: 28px;
+    }
+
+    .dvloggedSection {
+        width: 300px;
+    }
+    /*.dvheadSection {
+            margin-left:-80px;
+        }*/
+    #dvWelcomeLarge {
+        margin-left: -40px;
+    }
+
+    #dvTopHeading {
+        margin-left: -20px;
+    }
+
+    .logoutText {
+        margin-left: 20px;
+    }
+
+    .dvheadSection {
+        margin-left: 5px;
+    }
+
+    .inactivepatients {
+        min-height: 942px;
+    }
+
+    .dvListInactivePatients {
+        width: 500px;
+    }
+
+    .loyaltysection {
+        min-height: 582px;
+    }
+
+    .dvloyalty {
+        width: 520px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 300px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+
+    .changepwdsection {
+        min-height: 942px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 815px) {
+    /*body {
+            background-color: blue;
+        }*/
+    .topnav {
+        display: none;
+    }
+
+    .loginPageBgColor .col-sm-3 {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .loginPageBgColor .col-sm-6 {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+
+    .col-md-4 {
+        /* flex: 0 0 auto;*/
+        width: 70%;
+    }
+
+    .offset-md-4 {
+        margin-left: 15%;
+    }
+
+    .loginpagelogoimg {
+        width: 600px !important;
+    }
+
+    .userloginsection {
+        min-height: 731px;
+    }
+
+    #dvTopHeading img {
+        margin-left: -160px;
+    }
+
+    #dvTopHeading {
+        width: 35%;
+    }
+
+    .dvloggedSection {
+        width: 35%;
+    }
+
+    #dvSearchSection {
+        width: 460px;
+    }
+
+    .dvListMedicines {
+        width: 460px;
+    }
+
+    .dvAddMedicine {
+        width: 460px;
+    }
+
+    .inactivepatients {
+        min-height: 785px;
+    }
+
+    .dvListInactivePatients {
+        width: 485px;
+    }
+
+    .loyaltysection {
+        min-height: 785px;
+    }
+
+    .dvloyalty {
+        width: 505px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 295px;
+    }
+
+    .changepwdsection {
+        width: 400px;
+    }
+
+    .changepwdsection {
+        min-height: 785px;
+    }
+}
+
+@media screen and (min-width: 745px) and (max-width: 767px) {
+    /*body {
+        background-color: yellow;
+    }*/
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .loginpagelogoimg {
+        width: 530px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+
+    #dvTopHeading {
+        margin-left: -220px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 57%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 30%
+    }
+
+    .sitetopbargreen {
+        font-size: 28px;
+    }
+
+    #dvWelcomeLarge {
+        font-size: 14px;
+    }
+
+    .dvListMedicines {
+        width: 360px;
+    }
+
+    .dvAddMedicine {
+        width: 360px;
+    }
+
+    .dvheadSection {
+        width: 680px;
+        margin-left: -60px;
+    }
+
+    .dvloggedSection {
+        width: 300px;
+    }
+    /*
+    .dvheadSection .dvloggedSection {
+        width: 43%
+    }*/
+
+}
+
+@media screen and (min-width: 725px) and (max-width: 745px) {
+    /*body {
+        background-color: yellow;
+    }*/
+    .topnav {
+        display: none;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .loginpagelogoimg {
+        width: 530px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+
+    #dvTopHeading {
+        margin-left: -220px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 57%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 30%
+    }
+
+    .sitetopbargreen {
+        font-size: 28px;
+    }
+
+    #dvWelcomeLarge {
+        font-size: 14px;
+    }
+
+    .dvListMedicines {
+        width: 360px;
+    }
+
+    .dvAddMedicine {
+        width: 360px;
+    }
+
+    .dvheadSection {
+        width: 680px;
+        margin-left: -60px;
+    }
+
+    .dvloggedSection {
+        width: 308px !important;
+    }
+    /*
+    .dvheadSection .dvloggedSection {
+        width: 43%
+    }*/
+    .dvListInactivePatients {
+        width: 372px;
+    }
+
+    .dvloyalty {
+        width: 395px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 260px;
+    }
+
+    .loyaltysection h2 {
+        font-size: 25px;
+    }
+
+    .changepwdsection {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 715px) and (max-width: 725px) {
+    /* body {
+        background-color: yellow;
+    }*/
+    .topnav {
+        display: none;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .loginpagelogoimg {
+        width: 530px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+
+    #dvTopHeading {
+        margin-left: -220px;
+    }
+
+    .dvheadSection .col-sm-6 {
+        width: 57%
+    }
+
+    .dvheadSection .col-sm-3 {
+        width: 30%
+    }
+
+    .sitetopbargreen {
+        font-size: 28px;
+    }
+
+    #dvWelcomeLarge {
+        font-size: 14px;
+    }
+
+    .dvListMedicines {
+        width: 360px;
+    }
+
+    .dvAddMedicine {
+        width: 360px;
+    }
+
+    .dvheadSection {
+        width: 680px;
+        margin-left: -60px;
+    }
+
+    .dvloggedSection {
+        width: 300px !important;
+    }
+
+    .dvListInactivePatients {
+        width: 370px;
+    }
+    /*
+    .dvheadSection .dvloggedSection {
+        width: 43%
+    }*/
+    .dvloyalty {
+        width: 390px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 260px;
+    }
+
+    .loyaltysection h2 {
+        font-size: 25px;
+    }
+
+    .changepwdsection {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 670px) and (max-width: 715px) {
+    /*body {
+        background-color: yellow;
+    }*/
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .loginpagelogoimg {
+        width: 530px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 605px) and (max-width: 670px) {
+    /*body {
+        background-color: yellow;
+    }*/
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .loginpagelogoimg {
+        width: 530px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 575px) and (max-width: 605px) {
+    /*body {
+        background-color: yellow;
+    }*/
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .loginpagelogoimg {
+        width: 530px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+        .sidebar a {
+            float: left;
+        }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .topnav a:not(child) {
+        display: none;
+    }
+
+    .logoutText {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    #dvTopHeading {
+        padding-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    #showMenuLink {
+        display: block;
+        float: right;
+        color: rgb(0, 165, 80);
+    }
+
+    .dvloggedSection {
+        margin-top: 0px !important;
+    }
+
+    #dvWelcomeLarge {
+        display: none;
+    }
+
+    .sitetopbargreen {
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+        .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+    .dvloyalty {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 575px) {
+    /*body {
+        background-color: red;
+    }*/
+
+    .loginpagelogoimg {
+        width: 500px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+
+    #dvSearchSection {
+        width: 460px;
+    }
+
+    #hrListPatients {
+        width: 460px;
+    }
+
+    #dvTopHeading img {
+        margin-left: 80px;
+    }
+
+    #showMenuLink {
+        margin-right: 5px;
+    }
+
+    .inactivepatients {
+        min-height: 478px;
+    }
+
+    .dvloyalty {
+        width: 505px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 270px;
+    }
+
+    .loyaltysection {
+        min-height: 478px;
+    }
+
+    .changepwdsection {
+        min-height: 480px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 520px) {
+    /* body {
+        background-color: cornflowerblue;
+    }*/
+
+    .loginpagelogoimg {
+        width: 445px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 480px) {
+    /*body {
+        background-color: pink;
+    }
+*/
+    .loginpagelogoimg {
+        width: 425px !important;
+    }
+
+    .userloginsection {
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 450px) {
+    /*body {
+        background-color: green
+    }*/
+    #dvSearchSection, #hrListPatients {
+        width: 92% !important;
+    }
+
+    .loginpagelogoimg {
+        width: 380px !important;
+    }
+
+    .userloginsection {
+        min-height: 520px;
+    }
+    /*#dvTopHeading {
+            margin-left: 25px;
+            margin-right:0px;
+        }*/
+
+    #dvTopHeading img {
+        margin-left: 40px;
+    }
+
+    #dvTopHeading p {
+        margin-left: 10px;
+    }
+
+    #showMenuLink {
+        margin-right: 10px;
+    }
+
+    .sitetopbargreen {
+        font-size: 25px;
+    }
+
+    .inactivepatients {
+        min-height: 705px;
+    }
+
+    .loyaltysection {
+        min-height: 702px;
+    }
+
+    .dvloyalty {
+        width: 390px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 260px;
+    }
+
+    .changepwdsection {
+        min-height: 700px;
+    }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 415px) {
+    /*body {
+        background-color: maroon
+    }*/
+
+    #dvheadSection {
+        width: 412px;
+    }
+
+    #dvSearchSection, #hrListPatients {
+        width: 92% !important;
+    }
+
+    .loginpagelogoimg {
+        width: 380px !important;
+    }
+
+    .userloginsection {
+        min-height: 505px;
+    }
+
+    #dvTopHeading img {
+        margin-left: 10px;
+    }
+
+    #dvTopHeading p {
+        margin-left: 10px;
+    }
+
+    #showMenuLink {
+        margin-right: 5px;
+    }
+
+    #hrSearchPatients {
+        width: 330px;
+    }
+
+    #hrListPatients {
+        width: 330px !important;
+    }
+
+    .inactivepatients {
+        min-height: 680px;
+    }
+
+    .loyaltysection {
+        min-height: 657px;
+    }
+
+    .dvloyalty {
+        width: 375px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 255px;
+    }
+
+    .loyaltysection {
+        min-height: 678px;
+    }
+
+    .changepwdsection {
+        min-height: 680px;
+    }
+}
+
+
+@media screen and (min-width: 372px) and (max-width: 400px) {
+    /*body {
+        background-color: blue
+    }*/
+    #dvSearchSection, #hrListPatients {
+        width: 92% !important;
+    }
+
+    .loginpagelogoimg {
+        width: 350px !important;
+    }
+
+    .userloginsection {
+        min-height: 450px;
+    }
+
+    #dvTopHeading img {
+        margin-left: 3px;
+    }
+
+    #dvTopHeading p {
+        margin-left: 5px;
+    }
+
+    #showMenuLink {
+        margin-right: 5px;
+    }
+
+    .sitetopbargreen {
+        font-size: 25px;
+    }
+
+    .inactivepatients {
+        min-height: 657px;
+    }
+
+    .loyaltysection {
+        min-height: 435px;
+    }
+
+    .dvloyalty {
+        width: 340px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 260px;
+    }
+
+    .loyaltysection {
+        min-height: 615px;
+    }
+
+    .changepwdsection .btnClear {
+        margin-top: 10px;
+    }
+
+    .changepwdsection {
+        min-height: 615px;
+    }
+}
+
+@media screen and (min-width: 352px) and (max-width: 372px) {
+    /* body {
+        background-color: green
+    }*/
+    #dvSearchSection, #hrListPatients {
+        width: 92% !important;
+    }
+
+    .loginpagelogoimg {
+        width: 325px !important;
+    }
+
+    .userloginsection {
+        min-height: 360px;
+    }
+
+    .sitetopbargreen {
+        font-size: 27px;
+    }
+
+    #dvTopHeading img {
+        margin-left: 5px;
+    }
+
+    .inactivepatients {
+        min-height: 505px;
+    }
+
+    .loyaltysection {
+        min-height: 507px;
+    }
+
+    .dvloyalty {
+        width: 320px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 260px;
+    }
+
+    .changepwdsection {
+        min-height: 507px;
+    }
+
+        .changepwdsection .btnClear {
+            margin-top: 10px;
+        }
+}
+
+@media screen and (min-width: 312px) and (max-width: 352px) {
+    /* body {
+        background-color: mediumpurple
+    }*/
+
+    .loginpagelogoimg {
+        width: 290px !important;
+    }
+
+    .userloginsection {
+        min-height: 520px;
+    }
+
+    #dvTopHeading {
+        width: 344px;
+    }
+
+    #dvSearchSection {
+        width: 270px;
+    }
+
+    #hrListPatients {
+        width: 270px;
+    }
+
+    #hrSearchPatients {
+        width: 270px;
+    }
+
+    .dvListMedicines {
+        width: 270px;
+    }
+
+    .dvAddMedicine {
+        width: 270px;
+    }
+
+    #dvTopHeading .sitetopbargreen {
+        font-size: 25px !important;
+    }
+
+    #dvTopHeading .toplogo {
+        margin-left: 5px !important;
+    }
+
+    #showMenuLink {
+        margin-right: 15px;
+    }
+
+    .inactivepatients {
+        min-height: 654px;
+    }
+
+    .loyaltysection {
+        min-height: 653px;
+    }
+
+    .dvloyalty {
+        width: 282px;
+    }
+
+    #hrloyaltyProgramms {
+        width: 255px;
+    }
+
+    .changepwdsection {
+        min-height: 655px;
+    }
+
+        .changepwdsection .btnClear {
+            margin-top: 10px;
+        }
+}
+
+@media screen and (min-width: 272px) and (max-width: 312px) {
+    /* body {
+        background-color: orange
+    }*/
+
+    .loginpagelogoimg {
+        width: 250px !important;
+    }
+
+    .userloginsection {
+        min-height: 315px;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 272px) {
+    /*body {
+        background-color: green;
+    }*/
+
+    .loginpagelogoimg {
+        width: 220px !important;
+    }
+
+    .userloginsection {
+        min-height: 332px;
+    }
+
+    .btnClear {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 245px) and (max-width: 260px) {
+    /* body {
+        background-color: lightpink;
+    }*/
+
+    .loginpagelogoimg {
+        width: 220px !important;
+    }
+
+    .userloginsection {
+        min-height: 332px;
+    }
+
+    .btnClear {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 222px) and (max-width: 245px) {
+    /*body {
+        background-color: green;
+    }*/
+
+    .loginpagelogoimg {
+        width: 200px !important;
+    }
+
+    .userloginsection {
+        min-height: 342px;
+    }
+
+    .btnClear {
+        margin-top: 10px;
+    }
+}
+
+/*@media screen and (max-width: 670px) {
+    .loginpagelogoimg {
+        width: 500px;
+    }
+}*/
+/*.css-112knyn {
+    margin-top: 5px;
+    background: rgb(26, 144, 143);
+    color: var(--chakra-colors-white);
+}*/
+
+.footerbg {
+    /* margin-top: 5px;
+    background: rgb(26, 144, 143);
+    color: var(--chakra-colors-white);
+    height:130px;*/
+}
+
+.css-1ye2k0l {
+    /*display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline-start: var(--chakra-space-4);
+    padding-inline-end: var(--chakra-space-4);
+    max-width: var(--chakra-sizes-6xl);
+    padding-top: var(--chakra-space-10);
+    padding-bottom: var(--chakra-space-10);*/
+}
+
+/*@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+    .toplogo {
+        max-height: 50px;
+        margin-left:100px;
+    }
+    .userloginsection{
+        min-height:600px;
+    }
+}*/
+
+
+
+
+
+.loginpagelogoimg {
+    display: block;
+    margin: 0 auto;
+}
+
+#fldataloader {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    // background-color: rgba(255, 255, 255, 0.8); /* Optional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,206 @@
+﻿@model Pharmacy_System.Models.Medicines
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutLogged.cshtml";
+}
+
+
+<h2>Add New Medicine</h2>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <div class="border border-warning p-4 rounded-3 dvAddMedicine">
+            <form asp-action="Create" id="frmAddNewMedicine">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" placeholder="Name" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="col-sm-6">
+                        <label asp-for="Brand" class="control-label"></label>
+                        <select name="Brand" id="drpAddBrand" class="form-control" dropzone="true">
+                            <option value="">Select option</option>
+                            @section loadBrandsscripts {
+                                <script type="text/javascript">
+                                    var oBrandNames = "";
+                                    $.ajax({
+                                        type:"POST",
+                                        url: "/Brands/GetAllBrands",
+                                        contentType:"application/json; charset=utf-8",
+                                        data: "{}",
+                                        dataType:"json",
+                                        async:true,
+                                        cache:false,
+                                        success: function (data) {
+                                            oBrandNames = data.brandNames;
+                                            oBrandNames.forEach(function (item) {
+                                                var selectBox = $("#drpAddBrand");
+                                                var option = "<option value='" + item.Name + "'>" + item.Name + "</option>";
+                                                selectBox.append(option);
+                                            });
+                                        },
+                                        failure: function (msg) {
+                                            alert(msg.d);
+                                        },
+                                        error: function (error, errortype, exceptionobject) {
+                                            var err = eval("(" + error.responseText + ")");
+                                            alert(err.Message);
+                                        }
+                                    });
+                                </script>
+                            }
+                        </select>
+                        
+                       @*  <input asp-for="Brand" class="form-control" /> *@
+
+                        <span asp-validation-for="Brand" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <label asp-for="DosageForm" class="control-label"></label>
+                        @* <input asp-for="DosageForm" class="form-control" /> *@
+                        <select name="DosageForm" id="drpAddDosageForm" class="form-control" dropzone="true">
+                            <option value="">Select option</option>
+                            <option value="Aerosols" title="Pressurized sprays, like asthma inhalers, that release medication in a fine mist.">Aerosols</option>
+                            <option value="Buccal Tablets/Films" title="Placed between the cheek and gum for direct absorption through the oral mucosa.">Buccal Tablets/Films</option>
+                            <option value="Capsules" title="Contain medication in powder, liquid, or gel form inside a gelatin or HPMC shell.">Capsules</option>
+                            <option value="Creams" title="Semi-solid emulsions for skin application.">Creams</option>
+                            <option value="Drug Implants" title="Devices implanted under the skin or other tissue, providing a long-term release of medication.">Drug Implants</option>
+                            <option value="Dry Powder Inhalers (DPIs)" title="Provide medication in a dry powder form for inhalation.">Dry Powder Inhalers (DPIs)</option>
+                            <option value="Ear Drops" title="Liquid forms for treating ear conditions.">Ear Drops</option>
+                            <option value="Elixirs" title="Clear, sweetened alcoholic solutions for easier oral administration.">Elixirs</option>
+                            <option value="Eye Drops" title="Sterile liquid solutions or suspensions for treating eye conditions.">Eye Drops</option>
+                            <option value="Gels" title="Semi-solid preparations that may penetrate the skin more easily.">Gels</option>
+                            <option title="Injected just below the skin surface, often used for testing." value="Intradermal">Intradermal</option>
+                            <option title="Direct injection into veins for rapid absorption" value="Intravenous (IV)">Intravenous (IV)</option>
+                            <option title="Injection into muscles, allowing for slower absorption than IV" value="Intramuscular (IM)">Intramuscular (IM)</option>
+                            <option value="Lotions" title="Thin liquid formulations for covering large areas of skin.">Lotions</option>
+                            <option value="Nasal Sprays" title="Solutions or suspensions for direct nasal administration, often for local or systemic action.">Nasal Sprays</option>
+                            <option value="Nebulizer Solutions" title="Liquid medications turned into mist for inhalation, especially for respiratory conditions.">Nebulizer Solutions</option>
+                            <option value="Ointments" title="Oil-based preparations that provide a protective barrier.">Ointments</option>
+                            <option value="Patches" title="Adhesive patches that deliver medication over time through the skin.">Patches</option>
+                            <option value="Solutions" title="Medications dissolved in a liquid, providing uniform distribution.">Solutions</option>
+                            <option title="Injection under the skin for slow, steady absorption." value="Subcutaneous (SC)">Subcutaneous (SC)</option>
+                            <option value="Rectal Suppositories" title="Used when oral administration is not suitable.">Rectal Suppositories</option>
+                            <option value="Sublingual Tablets/Films" title="Placed under the tongue for rapid absorption into the bloodstream.">Sublingual Tablets/Films</option>
+                            <option value="Suspensions" title="Liquid preparations where solid particles are dispersed in a liquid but may need shaking before use.">Suspensions</option>
+                            <option value="Syrups" title="Sweetened liquid preparations, often used for children.">Syrups</option>
+                            <option value="Tablets" title="Commonly used solid form that can be swallowed, chewed, or dissolved (e.g., coated, uncoated, chewable, and effervescent tablets).">Tablets</option>
+                            <option value="Transdermal Patches" title="Adhesive patches applied to the skin for systemic drug delivery over time.">Transdermal Patches</option>
+                            <option value="Vaginal Suppositories/Inserts" title="Used for local or systemic effects.">Vaginal Suppositories/Inserts</option>                            
+                        </select>
+                        <span asp-validation-for="DosageForm" class="text-danger"></span>
+                    </div>
+                    <div class="col-sm-6">
+                        <label asp-for="Strength" class="control-label"></label>
+                        <input asp-for="Strength" class="form-control" placeholder="Strength" />
+                        <span asp-validation-for="Strength" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <label asp-for="Manufacturer" class="control-label"></label>
+                        <select name="Manufacturer" id="drpAddManufacturer" class="form-control" dropzone="true">
+                            <option value="">Select option</option>
+                            @section loadManufacturersscripts {
+                                <script type="text/javascript">
+                                    var oManufacturersNames = "";
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "/Manufacturers/GetAllManufacturers",
+                                        contentType: "application/json; charset=utf-8",
+                                        data: "{}",
+                                        dataType: "json",
+                                        async: true,
+                                        cache: false,
+                                        success: function (data) {
+                                            oManufacturersNames = data.manufacturerNames;
+                                            oManufacturersNames.forEach(function (item) {
+                                                var selectBox = $("#drpAddManufacturer");
+                                                var option = "<option value='" + item.Id + "'>" + item.Name + "</option>";
+                                                selectBox.append(option);
+                                            });
+                                        },
+                                        failure: function (msg) {
+                                            alert(msg.d);
+                                        },
+                                        error: function (error, errortype, exceptionobject) {
+                                            var err = eval("(" + error.responseText + ")");
+                                            alert(err.Message);
+                                        }
+                                    });
+                                </script>
+                            }
+                        </select>
+                        @* <input asp-for="Manufacturer" class="form-control" /> *@
+                        <span asp-validation-for="Manufacturer" class="text-danger"></span>
+                    </div>
+                    <div class="col-sm-6">
+                        <label asp-for="ExpirationDate" class="control-label"></label>
+                        @*< input asp-for="ExpirationDate" name="ExpirationDate" id="addExpirationDate" type="date" class="form-control" placeholder="Expiration Date" />
+                        <input type="text" id="test" name="test" /> 
+                        <input type="text" asp-for="ExpirationDate" class="form-control" id="datepicker">
+                        <span asp-validation-for="ExpirationDate" class="text-danger"></span>*@
+                       
+                        <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control" asp-for="ExpirationDate" />
+                                <span class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </span>
+                        </div>
+
+
+                        @section relatedToDataPicker {
+                            <script>
+                                $('#datepicker').datepicker({
+                                    format: 'dd/mm/yyyy',
+                                    autoclose: true
+                                });
+                            </script>
+                         }
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <label asp-for="ReorderLevel" class="control-label"></label>
+                        <input asp-for="ReorderLevel" class="form-control" placeholder="Reorder Level" />
+                        <span asp-validation-for="ReorderLevel" class="text-danger"></span>
+                    </div>
+                    <div class="col-sm-6">
+                        <label asp-for="PricePerUnit" class="control-label"></label>
+                        <input asp-for="PricePerUnit" class="form-control" placeholder="Price Per Unit" />
+                        <span asp-validation-for="PricePerUnit" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-group mt-4">
+                    <input type="submit" value="Create" id="btnSubmitMedicine" class="btn btn-success siteButtons" />
+                    <input class="btn btn-warning btnClear listDetailsbtn siteButtonsclear" id="btnAddMedicineClear" type="button" value="Clear" />
+                </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-warning mb-4 mt-4 btnbacktoList ">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            
+
+            $("#btnAddMedicineClear").click(function () {
+                $("#name").val(''); 
+                $("#Brand").text("");
+            });
+        });
+    </script>
+}

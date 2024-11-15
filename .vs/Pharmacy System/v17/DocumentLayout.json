@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PROJECTS\\Copy of Project\\New folder\\Pharmacy System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{854CC92E-81DC-4627-953D-27FEE57E65C6}|Pharmacy System\\Pharmacy System.csproj|c:\\projects\\copy of project\\new folder\\pharmacy system\\pharmacy system\\views\\manufacturers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{854CC92E-81DC-4627-953D-27FEE57E65C6}|Pharmacy System\\Pharmacy System.csproj|solutionrelative:pharmacy system\\views\\manufacturers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{854CC92E-81DC-4627-953D-27FEE57E65C6}|Pharmacy System\\Pharmacy System.csproj|c:\\projects\\copy of project\\new folder\\pharmacy system\\pharmacy system\\views\\medicines\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{854CC92E-81DC-4627-953D-27FEE57E65C6}|Pharmacy System\\Pharmacy System.csproj|solutionrelative:pharmacy system\\views\\medicines\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{854CC92E-81DC-4627-953D-27FEE57E65C6}|Pharmacy System\\Pharmacy System.csproj|c:\\projects\\copy of project\\new folder\\pharmacy system\\pharmacy system\\views\\manufacturers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{854CC92E-81DC-4627-953D-27FEE57E65C6}|Pharmacy System\\Pharmacy System.csproj|solutionrelative:pharmacy system\\views\\manufacturers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\PROJECTS\\Copy of Project\\New folder\\Pharmacy System\\Pharmacy System\\Views\\Manufacturers\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy System\\Views\\Manufacturers\\Create.cshtml",
+              "ToolTip": "C:\\PROJECTS\\Copy of Project\\New folder\\Pharmacy System\\Pharmacy System\\Views\\Manufacturers\\Create.cshtml",
+              "RelativeToolTip": "Pharmacy System\\Views\\Manufacturers\\Create.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T07:26:59.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\PROJECTS\\Copy of Project\\New folder\\Pharmacy System\\Pharmacy System\\Views\\Manufacturers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy System\\Views\\Manufacturers\\Edit.cshtml",
+              "ToolTip": "C:\\PROJECTS\\Copy of Project\\New folder\\Pharmacy System\\Pharmacy System\\Views\\Manufacturers\\Edit.cshtml",
+              "RelativeToolTip": "Pharmacy System\\Views\\Manufacturers\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T07:25:19.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\PROJECTS\\Copy of Project\\New folder\\Pharmacy System\\Pharmacy System\\Views\\Medicines\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy System\\Views\\Medicines\\Edit.cshtml",
+              "ToolTip": "C:\\PROJECTS\\Copy of Project\\New folder\\Pharmacy System\\Pharmacy System\\Views\\Medicines\\Edit.cshtml",
+              "RelativeToolTip": "Pharmacy System\\Views\\Medicines\\Edit.cshtml",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAANYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T07:25:15.393Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
